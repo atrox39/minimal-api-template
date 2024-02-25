@@ -16,8 +16,14 @@
 
   <ItemGroup>
     <None Remove="Config\" />
+    <None Remove="Router\" />
+    <None Remove="DTOs\" />
+    <None Remove="Response\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\" />
+    <Folder Include="Router\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Response\" />
   </ItemGroup>
 </Project>

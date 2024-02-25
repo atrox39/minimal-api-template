@@ -1,4 +1,6 @@
-﻿namespace Blog.Config
+﻿using Blog.Router;
+
+namespace Blog.Config
 {
   public static class AppConfig
   {
@@ -10,6 +12,8 @@
         app.UseSwaggerUI();
       }
       app.UseHttpsRedirection();
+      // Routes
+      app.MapGroup("/api").ApiRouterPlugin();
       return app;
     }
   }
